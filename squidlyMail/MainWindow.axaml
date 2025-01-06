@@ -9,25 +9,24 @@
 
 
     <DockPanel>
-        <Panel DockPanel.Dock="Top" Height="55" Background="#cca3ff"></Panel>
+        <Panel DockPanel.Dock="Top" Height="55" Background="#bf8bff"></Panel>
         <Panel>
-            <SplitView IsPaneOpen="True"
-                       DisplayMode="Inline"
-                       OpenPaneLength="120">
-                <SplitView.Pane>
-                    <ScrollViewer Background="#e5d0ff"></ScrollViewer>
-                </SplitView.Pane>
+            
                 <Grid>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="150" MinWidth="50"></ColumnDefinition>
+                        <ColumnDefinition Width="150" MinWidth="50" MaxWidth="400"></ColumnDefinition>
+                        <ColumnDefinition Width="2"></ColumnDefinition>
+                        <ColumnDefinition Width="150" MinWidth="50" MaxWidth="400"></ColumnDefinition>
                         <ColumnDefinition Width="2"></ColumnDefinition>
                         <ColumnDefinition Width="*" MinWidth="250"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
-                    <ScrollViewer Grid.Column="0" Background="#ffffff"></ScrollViewer>
-                    <GridSplitter Grid.Column="1" Background="Black" Opacity="0.25" ResizeDirection="Columns"/>
-                    <Panel Grid.Column="2" Background="#bf8bff"></Panel>
+                    <ScrollViewer Grid.Column="0" Background="#e5d0ff"></ScrollViewer>
+                    <GridSplitter Grid.Column="1" Background="#dabcff" Opacity="0.35" ResizeDirection="Columns"/>
+                    <ScrollViewer Grid.Column="2" Background="#e5d0ff"></ScrollViewer>
+                    <GridSplitter Grid.Column="3" Background="#dabcff" Opacity="0.35" ResizeDirection="Columns"/>
+                    <Panel Grid.Column="4" Background="#cca3ff"></Panel>
                 </Grid>
-            </SplitView>
+            
 
 
         </Panel>
